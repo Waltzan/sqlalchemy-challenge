@@ -133,7 +133,7 @@ def get_temps_start(start):
     session.close()
 
     temps = []
-    for min_temp, avg_temp, max_temp in results:
+    for min_temp, max_temp, avg_temp in results:
         temps_dict = {}
         temps_dict['Minimum Temperature'] = min_temp
         temps_dict['Maximum Temperature'] = max_temp
@@ -151,7 +151,7 @@ def get_temps_start_end(start, end):
     session.close()
 
     temps = []
-    for min_temp, avg_temp, max_temp in results:
+    for min_temp, max_temp, avg_temp in results:
         temps_dict = {}
         temps_dict['Minimum Temperature'] = min_temp
         temps_dict['Maximum Temperature'] = max_temp
